@@ -10,7 +10,7 @@ def app(environ, respond):
     respond('200 OK', [('Content-type', 'text/html; charset=utf-8')])
     yield "Hello w€rld😞!".encode('utf-8')
     polku = environ["PATH_INFO"]
-    salanimi = polku.replace("b","bob").replace("a", "alle rusetti")
+    salanimi = polku.replace("n","nana").replace("a", "alle rusetti")
     yield ("<p> moikka <p>".encode('utf-8'))
     yield (f"Salainen nimesi on: <b>{salanimi}</b>".encode('utf-8'))
     
